@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.filesample.mapper.FileMapper">
+        <insert id="insertFileInfo">
+    insert into file_table(f_name, f_uri)
+    values(#{f_name}, #{f_uri});
+        </insert>
+        <select id="selectFileName" resultType="java.lang.String">
+        select f_name from file_table where f_uri=#{uri} order by f_seq desc limit 1
+    </select> 
+</mapper>

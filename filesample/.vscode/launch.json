@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FilesampleApplication<filesample>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.filesample.FilesampleApplication",
+            "projectName": "filesample",
+            "args": ""
+        }
+    ]
+}
